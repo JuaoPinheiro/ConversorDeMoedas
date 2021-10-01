@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Conversor - Moedas</title>
+  </head>
+
+  <body>
+    <div id="cabecalho">
+      <h1>Conversor de Moedas</h1>
+    </div>
+
+    <div id="caixa-principal">
+      <p>Converter <b>de</b></p>
+      <!--Selecionar o real-->
+      <select class="select">
+        <option>R$ Real Brasileiro</option>
+      </select>
+
+      <!--Converter para dólar-->
+      <p class="paragrafo">Converter <b>para</b></p>
+      <select class="select" id="select-moedas">
+        <option>US$ Dolár Americano</option>
+        <option>€ Euro</option>
+      </select>
+
+      <!--local para add valor-->
+      <p class="paragrafo"><b>Valor</b></p>
+      <input type="number" placeholder="R$ 10.000,00" id="input" />
+
+      <!--button-->
+      <button id="botao">Converter</button>
+
+      <!--caixa das conversões-->
+      <div id="caixa-interna">
+        <!--REAL-->
+        <div class="caixa-menor">
+          <img src="./img/brasil.png" />
+          <p class="paragrafo">Real</p>
+          <p class="paragrafo-negrito" id="texto-real">R$10.000</p>
+        </div>
+        <!--IMG-SETA-->
+        <img src="./img/seta.png" id="seta" />
+        <!--DÓLAR-->
+        <div class="caixa-menor">
+          <img src="./img/eua.png" id="bandeira-moedas" />
+          <p class="paragrafo" id="texto-moedas">Dolár Americano</p>
+          <p class="paragrafo-negrito" id="input-moedas">$ 2000</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
