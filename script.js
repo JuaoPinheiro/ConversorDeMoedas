@@ -5,7 +5,7 @@ select.addEventListener("change", trocaDeMoedas); //evento troca
 
 async function converterMoedas() {
   let moedas = await fetch(
-    "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL"
+     "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL"
   ).then(function (resposta) {
     return resposta.json();
   });
